@@ -21,8 +21,17 @@
                     "description": "Enable pretty-printing for gdb",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
+                },
+                {
+                    "description": "Keep both sides of fork",
+                    "text": "set detach-on-fork off"
+                },
+                {
+                    "description": "Allow multiple inferiors to run",
+                    "text": "set schedule-multiple on"
                 }
-            ]
+            ],
+            "logging": { "engineLogging": true, "trace": true, "traceResponse": true }
         },
     ]
 }
